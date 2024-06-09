@@ -16,8 +16,8 @@ def calc_f1_score(tp, fp, fn):
 
         print(f'precision is {precision}\nrecall is {recall}\nf1-score is {f1_score}')
 
-calc_f1_score(tp=2, fp=3, fn=4)
-    
+calc_f1_score(tp=2, fp=4, fn=5)
+
 # Example
 # calc_f1_score(tp='a', fp=3, fn=4)
 # calc_f1_score(tp=2, fp='a', fn=4)

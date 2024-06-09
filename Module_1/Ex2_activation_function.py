@@ -16,7 +16,7 @@ def sigmoid_function(x):
 
 # ReLU Function
 def relu_function(x):
-    return 0 if x < 0 else x
+    return 0 if x <= 0 else x
 
 # ELU Function
 def elu_function(x):
