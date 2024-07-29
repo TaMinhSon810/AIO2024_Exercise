@@ -27,8 +27,7 @@ def compute_difference(bg_img, input_img):
 
 
 def compute_binary_mask(difference_single_channel):
-    difference_binary = np.where(
-        difference_single_channel >= 15, 255, 0).astype('uint8')
+    difference_binary = np.where(difference_single_channel >= 15, 255, 0).astype('uint8')
     difference_binary = np.stack((difference_binary,) * 3, axis = -1)
     return difference_binary
 
